@@ -17,6 +17,24 @@ export const USER_PROFILE = {
 // "Миний бүтээлүүд" - required array of projects with direct external links
 export const PROJECTS_LIST: Project[] = [
   {
+    id: 'js-problem-lab',
+    title: 'JavaScript Problem Bank & Interactive Lab',
+    subtitle: '14 Algorithm Exercises & Live Code Solver',
+    description:
+      'An interactive JavaScript challenge platform featuring 14 practical algorithm problems across 4 modules, complete with inputs, instant execution, and live solution verification.',
+    url: 'https://ariuka-js.netlify.app',
+    category: 'JavaScript & Logic',
+    badge: 'Interactive Solver',
+    highlights: [
+      '14 coding tasks: password validation, leap year checks, math puzzles, and date calculations',
+      'Real-time interactive inputs with instant evaluation output',
+      'Structured curriculum across 4 hands-on JavaScript lessons',
+    ],
+    techStack: ['JavaScript', 'DOM API', 'HTML5', 'CSS3', 'Algorithms'],
+    thumbnail: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?q=80&w=1000&auto=format&fit=crop',
+    featured: true,
+  },
+  {
     id: 'dream-job',
     title: 'Dream Job: Software Developer',
     subtitle: 'Career Vision, Skills & Educational Plan',
