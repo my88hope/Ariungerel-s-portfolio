@@ -71,7 +71,12 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#creations" className="hover:text-white transition-colors">
-                  My Creations (Бүтээлүүд)
+                  My Creations
+                </a>
+              </li>
+              <li>
+                <a href="#games" className="hover:text-white transition-colors">
+                  Games
                 </a>
               </li>
               <li>

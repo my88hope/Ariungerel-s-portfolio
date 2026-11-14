@@ -1,4 +1,5 @@
-import { Project, SkillItem, RoadmapStep, FunFactItem, FavoriteItem } from '../types';
+import { Project, SkillItem, RoadmapStep, FunFactItem, FavoriteItem, GameItem, LeaderboardEntry } from '../types';
+import gameData from './data.json';
 
 export const USER_PROFILE = {
   name: 'Ariungerel',
@@ -14,7 +15,7 @@ export const USER_PROFILE = {
   originalHomepageUrl: 'https://alyzhas-homepage.netlify.app',
 };
 
-// "Миний бүтээлүүд" - required array of projects with direct external links
+// Projects list with direct external links
 export const PROJECTS_LIST: Project[] = [
   {
     id: 'js-problem-lab',
@@ -241,3 +242,23 @@ export const FAVORITES: FavoriteItem[] = [
   { label: 'Favorite Food', value: 'Dumplings', category: 'Culinary' },
   { label: 'Key Goal', value: 'Become a Professional Software Developer', category: 'Career' },
 ];
+
+export const GAMES_LIST: GameItem[] = [
+  {
+    id: 'anime-guess',
+    title: 'Anime Guess',
+    subtitle: '3 Modes • Emoji, Blur & Characters',
+    description:
+      'Guess the anime from emoji clues, blurred posters that sharpen every 3 seconds, or iconic anime characters within 15 seconds per question!',
+    image: 'https://i.redd.it/0i0ybb3lgcsf1.jpeg',
+    badge: '3 Modes',
+    modesCount: 3,
+    questionsCount: gameData.questions.length + gameData.characters.length,
+  },
+];
+
+export const LEADERBOARD_STORAGE_KEY = 'alyzha_games_leaderboard_v2';
+
+export const DEFAULT_LEADERBOARD: LeaderboardEntry[] = [];
+
+

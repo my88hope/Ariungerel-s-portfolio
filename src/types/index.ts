@@ -42,3 +42,41 @@ export interface FavoriteItem {
   note?: string;
   category: string;
 }
+
+export type GameMode = 'emoji' | 'anime' | 'character';
+
+export interface AnimeQuestion {
+  emoji: string;
+  image: string;
+  answer: string;
+  options: string[];
+}
+
+export interface CharacterQuestion {
+  name: string;
+  anime: string;
+  image: string;
+  options: string[];
+}
+
+export interface GameItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  badge: string;
+  modesCount: number;
+  questionsCount: number;
+}
+
+export interface LeaderboardEntry {
+  id: string;
+  playerName: string;
+  score: number;
+  mode: GameMode;
+  correctCount: number;
+  totalAttempted: number;
+  date: string;
+}
+

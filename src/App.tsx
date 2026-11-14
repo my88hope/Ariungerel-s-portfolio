@@ -4,6 +4,7 @@ import { AboutHero } from './components/AboutHero';
 import { CreationsSection } from './components/CreationsSection';
 import { DreamJobSection } from './components/DreamJobSection';
 import { FunFactsSection } from './components/FunFactsSection';
+import { GamesSection } from './components/GamesSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
@@ -19,6 +20,9 @@ export default function App() {
 
         {/* My Creations Section - Array of projects linking to live Netlify pages */}
         <CreationsSection />
+
+        {/* Interactive Games Section & Leaderboard */}
+        <GamesSection />
 
         {/* Dream Job & Engineering Roadmap */}
         <DreamJobSection />

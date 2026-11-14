@@ -15,7 +15,7 @@ export const CreationsSection: React.FC = () => {
           <FadeIn delay={0.1} y={20}>
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-widest bg-purple-500/10 text-purple-300 border border-purple-500/20 mb-4">
               <FolderGit2 className="w-3.5 h-3.5" />
-              My Creations • Бүтээлүүд
+              My Creations
             </span>
           </FadeIn>
 
